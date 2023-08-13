@@ -1,0 +1,75 @@
+canvas {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  color: #000;
+  font-size: 24px;
+}
+
+#loadmap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #000;
+    font-size: 24px;
+}
+
+.floating-box {
+    background-color: #e5e5e5;
+    height: 100%;
+    /*text-align: center;*/
+    padding: 20px;
+    transition: all 0.2s ease-out;
+}
+
+#subtitle {
+    position: fixed;
+    top: 30px;
+    left: 290px;
+}
+
+#hidden-others {
+    white-space: pre-line;
+}
+
+#dataset {
+    position: fixed;
+    top: 30px;
+    left: 700px;
+}
+
+#gradientbar {
+    position: fixed;
+    top: 90px;
+    left: 700px;
+}
+
+#clustertype {
+    cusor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    left: 320px;
+}

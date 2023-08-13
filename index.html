@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>xlsx2chart</title>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="net.ico">
+
+
+    <link rel="stylesheet" href="./src/assets/css/mystyle.css">
+    <link rel="stylesheet" href="./src/assets/css/inbox.css">
+    <link rel="stylesheet" href="./src/assets/css/result.css">
+
+</head>
+
+<body>
+<div class="dashboard-page">
+    <div id="sidebar" class="sidebar sidebar-default open" role="navigation">
+        <!-- Sidebar header -->
+        <div class="sidebar-header header-cover" style="background-image: url('./src/assets/pic/avatar.jpg');"></div>
+
+        <!-- Sidebar navigation -->
+        <ul class="nav sidebar-nav">
+            <!-- Sidebar brand name -->
+            <li id="clickfileupload" class="sidebar-brand">
+                Upload .xlsx File
+
+            </li>
+        </ul>
+        <!-- input excel-data-column -->
+        <ul id="itemList" class="sub-list-item"></ul>
+
+        <div class="xaxiscss">
+            Current X-axis: <span id="xaxis"></span>
+        </div>
+    </div>
+
+    <input type="file" id="fileInput" style="display:none;">
+
+    <div class="viewpage ticket" style="margin-top: 50px;">
+        <div class="wrapperoverview maprow">
+            <div class="lineinfo">
+                <div class="linegraph">
+                    <img id="fileupload" style="cursor: pointer; width: 640px; height: 360px; margin: auto;" src="./src/assets/pic/upload.gif" alt="Animated GIF">
+
+                    <div id="barchart" style="display: none; width: 1200px; height: 750px; margin: 30px auto;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<script src="./src/assets/js/jquery-3.1.1.min.js"></script>
+<script src="./src/assets/js/axios.js"></script>
+<script src="./src/assets/js/axios.min.js"></script>
+<script src="./src/assets/js/echarts.min.js"></script>
+<script src="./src/assets/js/echarts-gl.min.js"></script>
+<script src="./src/assets/js/xlsx.full.min.js"></script>
+
+<script src="./src/assets/js/clickcolumn.js"></script>
+<script src="./src/assets/js/infodash.js"></script>
