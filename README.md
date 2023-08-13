@@ -3,10 +3,10 @@
 ## Download the project
 ### Front end
 :zap: Download the project from github. <br>
-:star: https://github.com/tomhitu/complexnetwork <br>
+:star: https://github.com/tomhitu/xlsx2chart <br>
 
 :zap: Download the project from git. <br>
-:star: https://github.com/tomhitu/complexnetwork.git <br>
+:star: https://github.com/tomhitu/xlsx2chart.git <br>
 
 ### Back end
 :zap: Download the project from github. <br>
