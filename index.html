@@ -28,12 +28,33 @@
 
             </li>
         </ul>
+
+        <div class="filenamecss">
+            <span id="filename"></span>
+        </div>
+
+        <div class="filenamecss1">
+            <span id="xaxis"></span>
+            <span class="tooltip" style="display: none">
+                <span class="question-mark">?</span>
+                <span class="tooltip-text">Select one of the list below as the x-axis index</span>
+              </span>
+        </div>
         <!-- input excel-data-column -->
         <ul id="itemList" class="sub-list-item"></ul>
 
         <div class="xaxiscss">
-            Current X-axis: <span id="xaxis"></span>
+            Control object
+            <span class="tooltip2">
+                <span class="question-mark2">?</span>
+                <span class="tooltip-text2">Enter keywords to filter the labels and start another Y-axis as a control, using space as gap to input different keywords</span>
+              </span>
         </div>
+        <div class="controlcss">
+            <input id="keywordsinput" type="text" placeholder="Space keywords..." name="text" class="input">
+        </div>
+
+
     </div>
 
     <input type="file" id="fileInput" style="display:none;">

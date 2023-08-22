@@ -10,11 +10,14 @@ let excelList = []
 
 function updateLineChart(show_excel_data, nameToRemove='data-date') {
     try {
+        /**
+         * update excel type, X axis and lists of Y axis
+         * Object.entries() returns an array to original object and cover its value
+         * @type {string[]}
+         */
         excel_type = Object.entries(show_excel_data)
             .filter(([name, data]) => name !== nameToRemove)
             .map(([name, data]) => name);
-
-        console.log(['Growth'].concat(excel_type));
 
         excelX = Object.entries(show_excel_data)
             .filter(([name, data]) => name === nameToRemove)
@@ -29,9 +32,14 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
             .map(([name, data]) => ({
                 name: name,
                 type: 'bar',
+                // yAxisIndex: name.includes('size') ? 1 : 0,
                 data: data
             }))
 
+        /**
+         * update the line chart
+         * @type {{yAxis: [{axisLabel: {formatter: (function(*): *|string)}, type: string},{alignTicks: boolean, nameLocation: string, type: string}], xAxis: {data: *, type: string, boundaryGap: boolean}, calculable: boolean, legend: {itemGap: number, data: string[]}, grid: {top: string, left: string, right: string, containLabel: boolean}, series: {data: *, name: *, type: string, yAxisIndex: number}[], tooltip: {axisPointer: {label: {show: boolean}, type: string}, trigger: string}, toolbox: {feature: {saveAsImage: {show: boolean}, restore: {show: boolean}, magicType: {show: boolean, type: string[]}, dataView: {show: boolean, readOnly: boolean}, mark: {show: boolean}}, top: number, show: boolean}, dataZoom: [{show: boolean, start: number, end: number},{start: number, end: number, type: string},{filterMode: string, left: string, showDataShadow: boolean, show: boolean, width: number, yAxisIndex: number, height: string}]}}
+         */
         opov = {
             tooltip: {
                 trigger: 'axis',
@@ -74,6 +82,12 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                             return isFinite(a) ? echarts.format.addCommas(+a / 1000) : '';
                         }
                     }
+                },
+                {
+                    nameLocation: 'start',
+                    alignTicks: true,
+                    type: 'value',
+                    // inverse: true
                 }
             ],
             dataZoom: [
@@ -99,8 +113,10 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
             ],
             series: excelList
         };
-
-        opov & rbaChart.setOption(opov);
+        /**
+         * true means cover the original option
+         */
+        rbaChart.setOption(opov, true);
     }
     catch (err) {
         console.log(err);
