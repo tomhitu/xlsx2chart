@@ -1,23 +1,28 @@
 # Welcom to use xlsx2chart project
 
 ## User Manual
+
+### Prerequisites
 :inbox_tray: Download the project. <br>
 
 ![Example Image](./src/assets/pic/download.png)
-### Front end
+#### Front end
 :zap: Download the project from github. <br>
 :star: https://github.com/tomhitu/xlsx2chart <br>
 
 :zap: Download the project from git. <br>
 :star: https://github.com/tomhitu/xlsx2chart.git <br>
 
-### Back end
+#### Back end
 :zap: Download the project from github. <br>
 :star: https://github.com/tomhitu/irp-entropy <br>
 
 :zap: Download the project from git. <br>
 :star: https://github.com/tomhitu/irp-entropy.git <br>
 
+### Operation
+
+#### Initialisation
 :balloon: Compile the back-end port. (Please see in irp-entropy tt.getflaskapp()) <br>
 
 ![Example Image](./src/assets/pic/runflask.png)
@@ -26,6 +31,7 @@
 
 ![Example Image](./src/assets/pic/orindex.png)
 
+#### Function
 :open_file_folder: Upload the xlsx file. <br>
 
 ![Example Image](./src/assets/pic/uploadxlsx.png)
