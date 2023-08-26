@@ -1,13 +1,13 @@
 # Welcom to use xlsx2chart project
 
 ## User Manual
-:first: Download the project. <br>
-:second: Compile the back-end port. (Please see in irp-entropy tt.getflaskapp()) <br>
-:third: Run index.html. <br>
-:fourth: Upload the xlsx file. <br>
-:fifth: Click the left column to update X-axis. <br>
-:sixth: Click on the marker above the image to control the data display. <br>
-:seventh: Write the marker into the left bottom to be the control data. <br>
+:inbox_tray: Download the project. <br>
+:balloon: Compile the back-end port. (Please see in irp-entropy tt.getflaskapp()) <br>
+:balloon: Run index.html. <br>
+:open_file_folder: Upload the xlsx file. <br>
+:chart_with_upwards_trend: Click the left column to update X-axis. <br>
+:bar_chart: Click on the marker above the image to control the data display. <br>
+:bar_chart: Write the marker into the left bottom to be the control data. <br>
 
 ## Download the project
 ### Front end
