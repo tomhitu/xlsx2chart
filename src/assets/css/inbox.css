@@ -4,9 +4,13 @@
 	 height: 100%;
 }
  body {
+	 width: 125%;  /* 100% / 0.8 */
+	 height: 125%; /* 100% / 0.8 */
 	 margin: 0;
 	 padding: 0;
-	 font-family: sans-serif;
+	 transform: scale(0.8);
+	 transform-origin: 0 0;
+ 	 font-family: sans-serif;
 	 font-style: normal;
 	 font-weight: 300;
 	 font-size: 14px;
