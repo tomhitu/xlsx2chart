@@ -29,9 +29,6 @@ If you need to adjust the way Excel content is read, you can modify the readExce
 ### Operation
 
 #### Initialisation
-:balloon: Compile the back-end port. (Please see in irp-entropy tt.getflaskapp()) <br>
-
-![Example Image](./src/assets/pic/runflask.png)
 
 :balloon: Run index.html. <br>
 
