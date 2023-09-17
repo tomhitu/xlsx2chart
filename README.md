@@ -1,24 +1,30 @@
 # Welcom to use xlsx2chart project
 
+## Updated 2023/09/17
+### Front-End Optimization and Backend Code Preservation
+
+In the latest version of this application, I've made significant optimizations to our workflow. All operations can now be performed on the frontend, eliminating the need to run a Python environment. This change enhances user-friendliness and improves performance. <br>
+
+#### Backend Code Still Available
+Despite these updates, we've opted to keep the original backend Python code. You can find this code in the py(beta) folder, where it remains valuable for optimization reference. <br>
+
+#### File Format Support
+Currently, the application supports only .xlsx Excel files. <br>
+
+#### Custom Configuration
+If you need to adjust the way Excel content is read, you can modify the readExcelContent function located in the clickcolumn.js file to meet your specific requirements. <br>
+
+
 ## User Manual
 
 ### Prerequisites
 :inbox_tray: Download the project. <br>
-
-![Example Image](./src/assets/pic/download.png)
 #### Front end
 :zap: Download the project from github. <br>
 :star: https://github.com/tomhitu/xlsx2chart <br>
 
 :zap: Download the project from git. <br>
 :star: https://github.com/tomhitu/xlsx2chart.git <br>
-
-#### Back end
-:zap: Download the project from github. <br>
-:star: https://github.com/tomhitu/irp-entropy <br>
-
-:zap: Download the project from git. <br>
-:star: https://github.com/tomhitu/irp-entropy.git <br>
 
 ### Operation
 

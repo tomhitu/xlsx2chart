@@ -31,7 +31,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
             .filter(([name, data]) => name !== nameToRemove)
             .map(([name, data]) => ({
                 name: name,
-                type: 'bar',
+                type: 'line',
                 // yAxisIndex: name.includes('size') ? 1 : 0,
                 data: data
             }))
