@@ -3,8 +3,7 @@
 ## Update 2023/11/11
 ### Toolbox for Chart
 
-Considering the inconvenience of zooming in and out of use after the image has been downloaded for actual display, new font settings have been added to hide the zoom bar toolbox. <br>
-
+Considering the inconvenience of zooming in and out after the image is downloaded to the actual display, added toolbox menu: adjust font size, hide zoom bar.
 ![Example Image](./src/assets/pic/update.png)
 
 ## Updated 2023/09/17
