@@ -26,7 +26,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                 boundaryGap: false,
                 data: data,
                 axisLabel: {
-                    fontSize: 30
+                    fontSize: 12
                 }
             }));
 
@@ -69,7 +69,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                 data: ['Growth'].concat(excel_type),
                 itemGap: 15,
                 textStyle: {
-                    fontSize: 30, // Set the font size for legend
+                    fontSize: 12, // Set the font size for legend
                     color: '#797b83'
                 }
             },
@@ -88,7 +88,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                             a = +a;
                             return isFinite(a) ? echarts.format.addCommas((+a).toFixed(1)) : '';
                         },
-                        fontSize: 30
+                        fontSize: 12
                     }
                 },
                 {
@@ -101,7 +101,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                             a = +a;
                             return isFinite(a) ? echarts.format.addCommas((+a).toFixed(1)) : '';
                         },
-                        fontSize: 30
+                        fontSize: 12
                     }
                 }
             ],

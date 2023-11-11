@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./src/assets/css/inbox.css">
     <link rel="stylesheet" href="./src/assets/css/result.css">
 
+    <link rel="stylesheet" href="./src/assets/css/toolbox.css">
+
 </head>
 
 <body>
@@ -60,6 +62,27 @@
     <input type="file" id="fileInput" style="display:none;">
 
     <div class="viewpage ticket" style="margin-top: 50px;">
+        <div class="toolbox" id="control-panel">
+            <div class="font-group field">
+                <input class="font-input" type="number" id="legend-font-size" value="12" />
+                <label class="font-type" for="legend-font-size">Legend Font Size:</label>
+            </div>
+            <div class="font-group field">
+                <input class="font-input" type="number" id="axis-font-size" value="12" />
+                <label class="font-type" for="axis-font-size">Axis Font Size:</label>
+            </div>
+            <div class="font-group field">
+                <label class="font-type" for="axis-font-size">Hidden Data Zoom:</label>
+                <div id="checklist">
+                    <input value="1" name="r" type="checkbox" id="01">
+                    <label for="01">x-axis</label>
+                    <input value="2" name="r" type="checkbox" id="02">
+                    <label for="02">y-axis</label>
+                </div>
+            </div>
+            <button class="reset-chart" onclick="updateChart()">Reset</button>
+        </div>
+
         <div class="wrapperoverview maprow">
             <div class="lineinfo">
                 <div class="linegraph">
@@ -87,3 +110,4 @@
 <script src="./src/assets/js/clickcolumn.js"></script>
 <script src="./src/assets/js/infodash.js"></script>
 
+<script src="./src/assets/js/toolbox.js"></script>
