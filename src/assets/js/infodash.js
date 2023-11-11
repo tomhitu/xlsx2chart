@@ -24,7 +24,10 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
             .map(([name, data]) => ({
                 type: 'category',
                 boundaryGap: false,
-                data: data
+                data: data,
+                axisLabel: {
+                    fontSize: 30
+                }
             }));
 
         excelList = Object.entries(show_excel_data)
@@ -33,7 +36,7 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                 name: name,
                 type: 'line',
                 // yAxisIndex: name.includes('size') ? 1 : 0,
-                data: data
+                data: data,
             }))
 
         /**
@@ -64,10 +67,14 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
             calculable: true,
             legend: {
                 data: ['Growth'].concat(excel_type),
-                itemGap: 5
+                itemGap: 15,
+                textStyle: {
+                    fontSize: 30, // Set the font size for legend
+                    color: '#797b83'
+                }
             },
             grid: {
-                top: '12%',
+                top: '20%',
                 left: '1%',
                 right: '10%',
                 containLabel: true
@@ -79,15 +86,23 @@ function updateLineChart(show_excel_data, nameToRemove='data-date') {
                     axisLabel: {
                         formatter: function (a) {
                             a = +a;
-                            return isFinite(a) ? echarts.format.addCommas(+a / 1000) : '';
-                        }
+                            return isFinite(a) ? echarts.format.addCommas((+a).toFixed(1)) : '';
+                        },
+                        fontSize: 30
                     }
                 },
                 {
                     nameLocation: 'start',
                     alignTicks: true,
                     type: 'value',
-                    // inverse: true
+                    // inverse: true,
+                    axisLabel: {
+                        formatter: function (a) {
+                            a = +a;
+                            return isFinite(a) ? echarts.format.addCommas((+a).toFixed(1)) : '';
+                        },
+                        fontSize: 30
+                    }
                 }
             ],
             dataZoom: [
