@@ -1,5 +1,12 @@
 # Welcom to use xlsx2chart project
 
+## Update 2023/11/11
+### Toolbox for Chart
+
+Considering the inconvenience of zooming in and out of use after the image has been downloaded for actual display, new font settings have been added to hide the zoom bar toolbox. <br>
+
+![Example Image](./src/assets/pic/update.png)
+
 ## Updated 2023/09/17
 ### Front-End Optimization and Backend Code Preservation
 
