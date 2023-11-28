@@ -1,5 +1,13 @@
 # Welcom to use xlsx2chart project
 
+## Update 2023/11/28
+### Toolbox for x-axis type control
+
+Plotting for x-axis sorting is not equally spaced. <br>
+It is worth noting that the form needs to be whether all arrays, such as the inclusion of strings, etc., please remove in advance!
+![Example Image](./src/assets/pic/sortbefore.png)
+![Example Image](./src/assets/pic/sortafter.png)
+
 ## Update 2023/11/11
 ### Toolbox for Chart
 
