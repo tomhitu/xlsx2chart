@@ -68,7 +68,7 @@ function handleExcelData(excelData) {
 
     for (const [k, v] of Object.entries(firstValue)) {
         if (typeof v === 'number') {
-            console.log("v: ", v);
+            // console.log("v: ", v);
             startk = 0;
             break;
         }
@@ -93,7 +93,7 @@ function handleExcelData(excelData) {
         }
     }
 
-    console.log("excelName: ", excelName)
+    // console.log("excelName: ", excelName)
 
     let excelJson = {};
     for (const item of excelName) {
@@ -103,9 +103,9 @@ function handleExcelData(excelData) {
     for (let i = startk; i < excelData.length; i++) {
         let row = 0;
         for (const [k, v] of Object.entries(excelData[i])) {
-            console.log("k: ", k);
-            console.log("v: ", v);
-            console.log("excelName[row]: ", excelName[row]);
+            // console.log("k: ", k);
+            // console.log("v: ", v);
+            // console.log("excelName[row]: ", excelName[row]);
             excelJson[excelName[row]].push(v);
             row++;
         }
@@ -116,7 +116,7 @@ function handleExcelData(excelData) {
 
 function sendExcelDataToJS(data) {
     excel_data = handleExcelData(data);
-    console.log("excel_data: ", excel_data);
+    // console.log("excel_data: ", excel_data);
     excel_column = [];
     /**
      * get the column names of the excel data

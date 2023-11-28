@@ -85,7 +85,7 @@
     box-shadow: none;
 }
 
-#checklist {
+.multi-check {
     --background: #fff;
     --text: #9b9b9b;
     --check: #38caef;
@@ -98,7 +98,7 @@
     grid-template-columns: 30px auto;
 }
 
-#checklist label {
+.multi-check label {
     color: var(--text);
     margin: 20px 0 0 0;
     position: relative;
@@ -111,12 +111,12 @@
     font-weight: 700;
 }
 
-#checklist label::before, #checklist label::after {
+.multi-check label::before, .multi-check label::after {
     content: "";
     position: absolute;
 }
 
-#checklist label::before {
+.multi-check label::before {
     height: 2px;
     width: 8px;
     left: -27px;
@@ -125,7 +125,7 @@
     transition: background 0.3s ease;
 }
 
-#checklist label:after {
+.multi-check label:after {
     height: 4px;
     width: 4px;
     top: 8px;
@@ -133,7 +133,7 @@
     border-radius: 50%;
 }
 
-#checklist input[type="checkbox"] {
+.multi-check input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
@@ -148,7 +148,7 @@
     margin: 20px 0 0 0;
 }
 
-#checklist input[type="checkbox"]::before, #checklist input[type="checkbox"]::after {
+.multi-check input[type="checkbox"]::before, .multi-check input[type="checkbox"]::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -157,37 +157,37 @@
     border-radius: 2px;
 }
 
-#checklist input[type="checkbox"]::before {
+.multi-check input[type="checkbox"]::before {
     width: 0px;
     right: 60%;
     transform-origin: right bottom;
 }
 
-#checklist input[type="checkbox"]::after {
+.multi-check input[type="checkbox"]::after {
     width: 0px;
     left: 40%;
     transform-origin: left bottom;
 }
 
-#checklist input[type="checkbox"]:checked::before {
+.multi-check input[type="checkbox"]:checked::before {
     animation: check-01 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked::after {
+.multi-check input[type="checkbox"]:checked::after {
     animation: check-02 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label {
+.multi-check input[type="checkbox"]:checked + label {
     color: var(--disabled);
     animation: move 0.3s ease 0.1s forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label::before {
+.multi-check input[type="checkbox"]:checked + label::before {
     background: var(--disabled);
     animation: slice 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label::after {
+.multi-check input[type="checkbox"]:checked + label::after {
     animation: firework 0.5s ease forwards 0.1s;
 }
 
@@ -283,4 +283,60 @@
     }
 }
 
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 20px 0 0 0;
+}
 
+.radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #9b9b9b;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+    background-color: #38caef;
+    border-color: transparent;
+    transform: scale(0.8);
+}
+
+.radio-button__input:checked + .radio-button__label {
+    color: #38caef;
+}
+
+.radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #38caef;
+}
