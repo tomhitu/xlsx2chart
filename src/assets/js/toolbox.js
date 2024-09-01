@@ -126,12 +126,19 @@ function updateChart() {
                     min: minX,
                     max: maxX
                 },
-                yAxis: {
+                yAxis: [{
                     type: 'value',
                     axisLabel: {
                         fontSize: axisFontSize
                     }
                 },
+                    {
+                        type: 'value',
+                        axisLabel: {
+                            fontSize: axisFontSize
+                        }
+                    }
+                ],
                 series: newSeries,
                 dataZoom: [
                     {
