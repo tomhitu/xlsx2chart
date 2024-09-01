@@ -26,11 +26,17 @@ function updateChart() {
                     fontSize: axisFontSize
                 }
             },
-            yAxis: {
+            yAxis: [{
                 axisLabel: {
                     fontSize: axisFontSize
                 }
             },
+                {
+                    axisLabel: {
+                        fontSize: axisFontSize
+                    }
+                }
+            ],
             dataZoom: [
                 {
                     show: !a
